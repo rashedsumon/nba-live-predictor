@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Kaggle Hub Download Cache
+.kagglehub/
+_kagglehub/
+extracted_datasets/
+
+# Local Streamlit configuration
+.streamlit/
