@@ -23,7 +23,7 @@ str.markdown("---")
 col1, col2 = str.columns([1, 1])
 
 with col1:
-    str.header("1. User Input (Real-Time Inputs)")
+    str.header("User Input (Real-Time Inputs)")
     
     str.subheader("🔄 Live Game Context")
     c1, c2, c3, c4 = str.columns(4)
@@ -46,7 +46,7 @@ with col1:
     selected_away = str.multiselect("Select Away Lineup (Exactly 5)", player_db["Player"].tolist(), default=default_away)
 
 with col2:
-    str.header("2. Model Output (AI Analytics Inference)")
+    str.header("Model Output (AI Analytics Inference)")
     
     # Validating lineup size rule limits before running inference math
     if len(selected_home) == 5 and len(selected_away) == 5:
